@@ -1,0 +1,40 @@
+:root
+{
+    --CelesteFondo: #82b7b7;
+    --BlancoPrincipal: #ffefd0;
+    --Naranja: #f58155;
+    --Naranja-oscuro: #f7614a;
+}
+
+.pizzeriasClasicas
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h2
+{
+    text-align: center;
+    color: #333;
+    margin: 25px auto;
+    font-size: 27px;
+}
+
+.pizzeria
+{
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.pizzeriasClasicas .pizzeria img
+{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+.pizzeriasClasicas .pizzeria h3
+{
+    margin: 10px 0;
+}

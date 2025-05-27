@@ -1,0 +1,73 @@
+.bloque
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: var(--BlancoPrincipal);
+    box-shadow: 0 0 10px #0002;
+    overflow: hidden;
+}
+
+.bloqueRecetas
+{
+    flex-direction: row-reverse;
+    background-color: var(--Naranja);
+}
+
+.bloqueRecetas > .contenido > h2
+{
+    color: var(--BlancoPrincipal);
+}
+
+.bloque img
+{
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    flex: 1 1 300px;
+}
+
+.bloque .contenido
+{
+    padding: 20px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloque h2
+{
+    color: var(--Naranja);
+    margin-bottom: 10px;
+}
+
+.bloque p
+{
+    margin-bottom: 15px;
+}
+
+.boton
+{
+    display: inline-block;
+    background-color: var(--Naranja);
+    color: var(--BlancoPrincipal);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 200px;
+    text-align: center;
+}
+
+.boton:hover
+{
+    background-color: var(--Naranja-oscuro);
+}
+
+.bloqueRecetas > .contenido > .boton
+{
+    background-color: var(--BlancoPrincipal);
+    color: var(--Naranja);
+}

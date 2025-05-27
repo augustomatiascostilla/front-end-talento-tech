@@ -1,0 +1,141 @@
+:root
+{
+    --CelesteFondo: #82b7b7;
+    --BlancoPrincipal: #ffefd0;
+    --Naranja: #f58155;
+    --Naranja-oscuro: #f7614a;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/******BODY*******/
+body
+{
+    background-color: var(--CelesteFondo);
+}
+
+/********CONTENEDOR PRINCIPAL********/
+.contenedorPrincipal
+{
+    background-color: var(--BlancoPrincipal);
+    width: 85%;
+    margin: auto;
+}
+
+/*******HEADER*******/
+
+header
+{
+    position: relative;
+    aspect-ratio: 30/14;
+    overflow: hidden;
+}
+
+.imgContenedor
+{
+    margin: 0;
+}
+
+.imgContenedor img
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.mascara
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3334;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1
+{
+    color: var(--BlancoPrincipal);
+    font-family: "Playwrite DK Loopet", cursive;;
+    font-size: 55px;
+}
+
+.mascara img
+{
+    width: 150px;
+}
+
+/********NAV*********/
+
+nav
+{
+    background-color: var(--Naranja);
+    text-align: center;
+}
+
+nav ul li
+{
+    display: inline-block;
+}
+
+nav ul li a
+{
+    display: block;
+    padding: 10px;
+    font-size: 21px;
+    font-weight: bold;
+    color: var(--BlancoPrincipal);
+    text-decoration: none;
+}
+
+nav ul li a:hover
+{
+    background-color: var(--Naranja-oscuro);
+    position: relative;
+    transition: background .3s;
+}
+
+/************FOOTER**************/
+
+footer 
+{
+    background-color: #333;
+    color: var(--BlancoPrincipal);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+ }
+  
+.footer-contenido 
+{
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+.footer-redes
+{
+    margin-top: 15px;
+}
+  
+.footer-redes a
+{
+    color: var(--BlancoPrincipal);
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+  
+.footer-redes a:hover
+{
+    color: var(--CelesteFondo);
+}
+  

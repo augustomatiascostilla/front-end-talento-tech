@@ -1,0 +1,58 @@
+:root
+{
+    --CelesteFondo: #82b7b7;
+    --BlancoPrincipal: #ffefd0;
+    --Naranja: #f58155;
+    --Naranja-oscuro: #f7614a;
+}
+
+.contacto
+{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.contacto h2
+{
+    color: var(--Naranja);
+    text-align: center;
+    margin: 25px 0;
+    font-size: 28px;
+}
+
+.contacto form label
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.contacto form input, textarea
+{
+    display: block;
+    width: 100%;
+    border: 2px solid var(--Naranja);
+    border-radius: 8px;
+    outline: none;
+    height: 35px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.contacto form textarea
+{
+    height: 100px;
+}
+
+#boton
+{
+    background-color: var(--Naranja);
+    width: 120px;
+    text-align: center;
+    color: var(--BlancoPrincipal);
+    font-weight: bold;
+    font-size: 17px;
+    padding: 5px;
+}

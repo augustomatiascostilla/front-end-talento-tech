@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="style.css"><!--ESTILO GENERAL-->
+    <link rel="stylesheet" href="contactoStyle.css"><!--ESTILO DE CONTACTO-->
+    <!-- GOOGLE FONTS - ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
+        rel="stylesheet">
+    <!-- ICONoS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="contenedorPrincipal">
+        <header>
+            <div class="imgContenedor">
+                <img src="Imagenes/pizzaPortada.webp" alt="">
+            </div>
+            <div class="mascara">
+                <h1>Contacto</h1>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pizzerias.html">Pizzerias</a></li>
+                <li><a href="recetas.html">Recetas</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="contacto">
+                <h2>Contacto</h2>
+                <form action="https://formspree.io/f/xkgrnelb" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Escriba aqui su nombre...">
+
+                    <label for="correo">Correo Electronico:</label>
+                    <input type="email" name="correo" id="correo" placeholder="Escriba aqui su correo electronico...">
+
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" name="asunto" id="asunto" placeholder="Escriba aqui asunto por el que se comunica...">
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Escriba aqui su mensaje y nos comunicaremos a la brevedad..."></textarea>
+
+                    <input id="boton" type="submit" value="Enviar">
+                </form>
+            </section>              
+        </main>
+        <footer>
+            <div class="footer-contenido">
+                <p>&copy; 2025 Pizzerías Porteñas | Pasion por la buena Pizza</p>
+                <div class="footer-redes">
+                  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://twitter.com" target="_blank"><i class="fab fa-x"></i></a>
+                  <a href="mail_de_ejemplo@pizzaportena.com"><i class="fas fa-envelope"></i></a>
+                </div>
+              </div>
+        </footer>
+    </div>
+</body>
+
+</html>

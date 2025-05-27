@@ -1,0 +1,11 @@
+.containerImg
+{
+    max-width: 600px;
+    margin: 35px auto;
+}
+
+.containerImg img
+{
+    width: 100%;
+    height: 100%;
+}
