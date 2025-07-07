@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recetas</title>
+    <title>Tienda Online</title>
     <!--ESTILOS-->
     <link rel="stylesheet" href="style.css"><!--ESTILOS GENERALES-->
     <link rel="stylesheet" href="recetasStyle.css"><!--ESTILOS DE RECETAS-->
+    <link rel="stylesheet" href="tiendaStyle.css">
     <!-- GOOGLE FONTS - ROBOTO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,7 @@
                 <img src="Imagenes/pizzaPortada.webp" alt="">
             </div>
             <div class="mascara">
-                <h1>Recetario</h1>
+                <h1>Compras Online</h1>
             </div>
         </header>
         <nav>
@@ -36,9 +37,13 @@
             </ul>
         </nav>
         <main>
-            <div class="containerImg">
-                <img src="Imagenes/SITIO-EN-CONSTRUCCION.jpg" alt="SITIO-EN-CONSTRUCCION">
-            </div>
+            <h1>Tienda</h1>
+            <div id="productos" class="grid-productos"></div>
+        
+            <h2>Carrito</h2>
+            <ul id="carrito"></ul>
+            <p id="total">Total: $0</p>
+            <button id="vaciar-carrito">Vaciar Carrito</button>
         </main>
         <footer>
             <div class="footer-contenido">
@@ -52,6 +57,7 @@
               </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
