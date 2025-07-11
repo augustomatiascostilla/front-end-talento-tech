@@ -2,10 +2,10 @@ let productos = [];
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("https://fakestoreapi.com/products")
+  fetch("https://dummyjson.com/products")
     .then(response => response.json())
     .then(data => {
-      productos = data;
+      productos = data.products;
       mostrarProductos();
       actualizarCarrito();
     })
@@ -21,7 +21,7 @@ function mostrarProductos() {
     const div = document.createElement("div");
     div.className = "producto";
     div.innerHTML = `
-      <img src="${producto.image}" alt="${producto.title}">
+      <img src="${producto.thumbnail}" alt="${producto.title}">
       <h3>${producto.title}</h3>
       <p>$${producto.price}</p>
       <button onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
@@ -54,6 +54,18 @@ function vaciarCarrito() {
   actualizarCarrito();
 }
 
+function finalizarCompra() {
+  if (carrito.length === 0) {
+    alert("Tu carrito está vacío.");
+    return;
+  }
+
+  alert("¡Gracias por tu compra!");
+  carrito = [];
+  guardarCarrito();
+  location.reload(); 
+}
+
 function guardarCarrito() {
   localStorage.setItem("carrito", JSON.stringify(carrito));
 }
@@ -82,6 +94,7 @@ function actualizarCarrito() {
     <p><strong>${cantidadTotal}</strong> producto(s) agregado(s)</p>
     <p><strong>Total: $${total.toFixed(2)}</strong></p>
     <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    <button onclick="finalizarCompra()" style="margin-left: 1rem; background-color: green;">Finalizar compra</button>
   `;
   lista.appendChild(resumen);
 }
